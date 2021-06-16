@@ -53,8 +53,10 @@ function showSuggestions(list)
 iconSearch.onclick = () =>
 {
     let inputValue = inputBox.value;
+    if(inputValue){
     let linkWord = "https://www.google.com/search?q=".concat( inputValue.split(" ").join('+'));
     //console.log(linkWord);
     location.replace(linkWord);
+    }
 }
 
